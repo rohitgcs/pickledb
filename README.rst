@@ -15,6 +15,7 @@ pickleDB is Fun
 
     >>> db.get('key')
     'value'
+
 		>>> db.getPattern(pattern="prefix_")
     ['prefix_foo','prefix_bar']
 
