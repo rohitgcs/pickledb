@@ -69,6 +69,10 @@ class pickledb(object):
         except KeyError:
             return None
 
+	def getPattern(self, pattern='*'):
+		'''Returns a list of all keys in db with pattern specified'''
+		return [x for x in self.db.keys() if pattern in x]
+		
     def getall(self):
         '''Return a list of all keys in db'''
         return self.db.keys()
